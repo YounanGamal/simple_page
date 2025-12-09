@@ -1,84 +1,220 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Younan Gamal — Portfolio</title>
+    <meta name="description" content="Professional portfolio showcasing UI/UX design and development work">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <!-- PINNED NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <div class="brand">
+                <div class="logo"><img src="assets/images/profile.png" style="width: 100%;" alt=""></div>
 
-    <!-- Navigation -->
-    <nav>
-        <ul align='center'>
-            <span style="padding-right: 20px;"><a href="#Home">Home</a></span>
-            <span style="padding-right: 20px;"><a href="#About">About</a></span>
-            <span style="padding-right: 20px;"><a href="#Contact">Contact</a></span>
-            <span style="padding-right: 20px;"><a href="#Images">Images</a></span>
-            <span style="padding-right: 20px;"><a href="#Videos">Videos</a></span>
-        </ul>
+                <div class="brand-text">
+                    <h1>Younan Gamal</h1>
+                    <p>Flutter Developer</p>
+                </div>
+            </div>
+
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-cta" onclick="document.querySelector('#contact').scrollIntoView()">Let's Talk</button>
+        </div>
     </nav>
+    <main>
+        <div class="container">
+            <!-- HERO -->
+            <section id="home" class="hero">
+                <div class="profile-image-wrapper">
+                    <div class="profile-image">
+                        <img src="assets/images/profile.png" alt="Younan Gamal">
+                    </div>
+                </div>
+                <div class="hero-content">
+                    <!-- <div class="hero-badge">
+                        <span>✨</span>
+                        <span>Available for Freelance Work</span>
+                    </div> -->
+                    <h2 class="example-title" id="typeWriter">Hi, I'm Younan Gamal</h2>
 
-    <!-- HOME -->
-    <dl id="Home">
-        <dt>
-            <h2>Home</h2>
-        </dt>
-        <dd>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi odio eveniet beatae, ipsam dolorum
-                assumenda dolor rem sapiente expedita voluptatum, perspiciatis magni perferendis unde consectetur quas
-                ipsum cupiditate corrupti neque!.</p>
-        </dd>
-    </dl>
+                    <p class="name-title">Flutter Developer & Front-End </p>
+                    <p class="lead">I'm a passionate developer who crafts beautiful, functional digital experiences.
+                        With expertise in Flutter and modern web technologies, I transform ideas into elegant solutions
+                        that users love. I believe in clean code, intuitive design, and creating interfaces that make a
+                        difference.</p>
+                    <div class="hero-actions">
+                        <button class="btn-primary" onclick="document.querySelector('#contact').scrollIntoView()">Hire
+                            Me</button>
+                        <button class="btn-secondary"
+                            onclick="document.querySelector('#projects').scrollIntoView()">View Work</button>
+                    </div>
+                </div>
+            </section>
+            <div class="stats">
+                <div class="stat">
+                    <strong class="count" data-target="38">0</strong>
+                    <span>Projects Completed</span>
+                </div>
+                <div class="stat">
+                    <strong class="count" data-target="5">0</strong>
+                    <span>Happy Clients</span>
+                </div>
+                <div class="stat">
+                    <strong class="count" data-target="1">0</strong>
+                    <span>Years Experience</span>
+                </div>
+            </div>
+            <!-- SERVICES -->
+            <section id="services" class="reveal">
+                <div class="section-header">
+                    <h3>What I Do</h3>
+                    <p>Specialized services to bring your vision to life</p>
+                </div>
 
-    <!-- ABOUT -->
-    <dl id="About">
-        <dt>
-            <h2>About</h2>
-        </dt>
-        <dd>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, libero necessitatibus illo laborum
-                asperiores natus error iure repudiandae iusto autem corporis ullam. Vero repudiandae sequi saepe
-                impedit, voluptatibus iure voluptatem?</p>
-        </dd>
-    </dl>
+                <div class="services-grid">
+                    <!-- <div class="service-card reveal">
+                        <div class="service-icon">🎨</div>
+                        <h4>UI/UX Design</h4>
+                        <p>Designing intuitive and accessible interfaces with a focus on user experience, wireframing,
+                            and prototyping that puts usability first.</p>
+                    </div> -->
 
-    <!-- CONTACT -->
-    <dl id="Contact">
-        <dt>
-            <h2>Contact</h2>
-        </dt>
-        <dd>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium at quas recusandae voluptates
-                provident eveniet reiciendis commodi, distinctio quasi enim excepturi perferendis eius dolor ipsa
-                necessitatibus molestias, ex voluptate quos?</p>
-        </dd>
-    </dl>
+                    <div class="service-card reveal">
+                        <div class="service-icon">📱</div>
+                        <h4>Flutter Development</h4>
+                        <p>Building cross-platform mobile applications with Flutter, delivering native performance and
+                            beautiful, responsive interfaces.</p>
+                    </div>
 
-    <!-- IMAGES SECTION -->
-    <dl id="Images">
-        <dt>
-            <h2>Images</h2>
-        </dt>
-        <dd>
-            <img src="assets/images/error404.webp" alt="Sample Image" width="300">
-        </dd>
-    </dl>
+                    <div class="service-card reveal">
+                        <div class="service-icon">💻</div>
+                        <h4>Front-End Development</h4>
+                        <p>Creating fast, responsive websites using modern HTML, CSS, and JavaScript with clean,
+                            maintainable code architecture.</p>
+                    </div>
+                </div>
+            </section>
 
-    <!-- VIDEOS SECTION -->
-    <dl id="Videos">
-        <dt>
-            <h2>Videos</h2>
-        </dt>
-        <dd>
-            <video width="350" controls poster="assets/images/error404.webp">
-                <source src="assets/video/video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </dd>
-    </dl>
+            <!-- PROJECTS -->
+            <section id="projects" class="reveal">
+                <div class="section-header">
+                    <h3>Featured Work</h3>
+                    <p>Selected projects and case studies</p>
+                </div>
 
+
+                <div class="projects-grid">
+
+                    <!-- ROUTE ACADEMY APP -->
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/images/route-app.jpg" alt="Route Academy App">
+                        </div>
+                        <div class="project-body">
+                            <h5>Route Academy App</h5>
+                            <p>A full course booking platform including student registration, online/offline attendance,
+                                payment integration (Visa, Vodafone Cash, Fawry), instructor profiles, and user reviews.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Payments</span>
+                                <span class="tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SMART ATTENDANCE SYSTEM -->
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/images/smart-attendance.jpg" alt="Smart Attendance System">
+                        </div>
+                        <div class="project-body">
+                            <h5>Smart Attendance System</h5>
+                            <p>An intelligent attendance system using QR codes & geolocation to verify attendance.
+                                Features include real-time logs, admin dashboard, secure validation, and automated
+                                reporting.</p>
+                            <div class="project-tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">QR Code</span>
+                                <span class="tag">Geolocation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CLOTHING FACTORY MANAGEMENT APP -->
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/images/factory-app.png" alt="Clothing Factory Management App">
+                        </div>
+                        <div class="project-body">
+                            <h5>Clothing Factory Management App</h5>
+                            <p>A communication and operations tracking system replacing WhatsApp for production teams.
+                                Includes order tracking, task management, admin control, and worker messaging.</p>
+                            <div class="project-tags">
+                                <span class="tag">Flutter</span>
+                                <span class="tag">Admin Panel</span>
+                                <span class="tag">Messaging</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- CONTACT -->
+            <section id="contact" class="reveal">
+                <div class="section-header">
+                    <h3>Let's Work Together</h3>
+                    <p>Ready to start your project? Get in touch</p>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project..."
+                                required></textarea>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn-primary">Send Message</button>
+                            <div id="formStatus"></div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>© 2025 Younan Gamal — Crafted with passion</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="practes.js">
+    </script>
 </body>
 
 </html>
